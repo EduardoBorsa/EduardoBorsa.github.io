@@ -1,7 +1,7 @@
 ---
 title: "Docker"
 date: 2023-07-10T06:19:23-03:00
-draft: false
+draft: true
 tags: ["Docker"]
 ---
 

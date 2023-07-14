@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Docker on My New Hugo Site</title>
+    <link>http://example.org/tags/docker/</link>
+    <description>Recent content in Docker on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 10 Jul 2023 06:19:23 -0300</lastBuildDate><atom:link href="http://example.org/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Docker</title>
+      <link>http://example.org/posts/docker/</link>
+      <pubDate>Mon, 10 Jul 2023 06:19:23 -0300</pubDate>
+      
+      <guid>http://example.org/posts/docker/</guid>
+      <description>Docker
+Your browser doesn&#39;t support embedded videos, but don&#39;t worry, you can download it and watch it with your favorite video player! coco
+Contents CLI Commands ps Dockerfile Commands entrypoint CLI Commands ps List docker containers.
+docker ps docker run By default if you don&amp;rsquo;t specify the baseimge:version the :version as latest.
+Dockerfile Commands Entrypoint </description>
+    </item>
+    
+  </channel>
+</rss>

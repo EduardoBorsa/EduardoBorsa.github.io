@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>About on My New Hugo Site</title>
+    <link>http://example.org/about/</link>
+    <description>Recent content in About on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 10 Jul 2023 05:43:27 -0300</lastBuildDate><atom:link href="http://example.org/about/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My First Post</title>
+      <link>http://example.org/about/about/</link>
+      <pubDate>Mon, 10 Jul 2023 05:43:27 -0300</pubDate>
+      
+      <guid>http://example.org/about/about/</guid>
+      <description>Poison
+DEMO - https://poison.lukeorth.com/ Poison is a clean, professional Hugo theme designed to captivate your readers.
+It&amp;rsquo;s also tiny and privacy conscious with no external dependencies (unless you opt to include comments). No JavaScript frameworks, icon packs, or Google fonts. No ads or trackers polluting your console window. We kept things simple. A little vanilla JavaScript, a dash of CSS, and the power of Hugo.
+All the static assets for the site (JS files, CSS, and fonts) are located within the theme&amp;rsquo;s /assets/ directory.</description>
+    </item>
+    
+  </channel>
+</rss>
