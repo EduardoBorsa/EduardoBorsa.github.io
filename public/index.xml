@@ -1,47 +1,30 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My New Hugo Site</title>
+    <title>DICE IT</title>
     <link>http://example.org/</link>
-    <description>Recent content on My New Hugo Site</description>
+    <description>Recent content on DICE IT</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 10 Jul 2023 06:19:23 -0300</lastBuildDate><atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 14 Jul 2023 14:54:23 -0300</lastBuildDate><atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Docker</title>
-      <link>http://example.org/posts/docker/</link>
-      <pubDate>Mon, 10 Jul 2023 06:19:23 -0300</pubDate>
+      <title>First Day Top Interview 150</title>
+      <link>http://example.org/blog/first-day-top-interview-150/</link>
+      <pubDate>Fri, 14 Jul 2023 14:54:23 -0300</pubDate>
       
-      <guid>http://example.org/posts/docker/</guid>
-      <description>Docker
-Your browser doesn&#39;t support embedded videos, but don&#39;t worry, you can download it and watch it with your favorite video player! coco
-Contents CLI Commands ps Dockerfile Commands entrypoint CLI Commands ps List docker containers.
-docker ps docker run By default if you don&amp;rsquo;t specify the baseimge:version the :version as latest.
-Dockerfile Commands Entrypoint </description>
+      <guid>http://example.org/blog/first-day-top-interview-150/</guid>
+      <description>Contents Exercise Description Code With Me Exercise Setup Solution 1 Solution 2 Solution 3 Today is the first day of my journey with my friend Dennis Dang on doing the Top 150 Interview Study Plan from Leet Code Exercise Description The first exercise is about Merge Sorted Array . The description is:
+You are given two integer arrays nums1 and nums2, sorted in non-decreasing order, and two integers m and n, representing the number of elements in nums1 and nums2 respectively.</description>
     </item>
     
     <item>
-      <title>My First Post</title>
-      <link>http://example.org/posts/my-first-post/</link>
-      <pubDate>Mon, 10 Jul 2023 05:47:27 -0300</pubDate>
-      
-      <guid>http://example.org/posts/my-first-post/</guid>
-      <description>Poison
-DEMO - https://poison.lukeorth.com/ Poison is a clean, professional Hugo theme designed to captivate your readers.
-It&amp;rsquo;s also tiny and privacy conscious with no external dependencies (unless you opt to include comments). No JavaScript frameworks, icon packs, or Google fonts. No ads or trackers polluting your console window. We kept things simple. A little vanilla JavaScript, a dash of CSS, and the power of Hugo.
-All the static assets for the site (JS files, CSS, and fonts) are located within the theme&amp;rsquo;s /assets/ directory.</description>
-    </item>
-    
-    <item>
-      <title>My First Post</title>
+      <title>DICE IT - Software Consultancy</title>
       <link>http://example.org/about/about/</link>
       <pubDate>Mon, 10 Jul 2023 05:43:27 -0300</pubDate>
       
       <guid>http://example.org/about/about/</guid>
-      <description>Poison
-DEMO - https://poison.lukeorth.com/ Poison is a clean, professional Hugo theme designed to captivate your readers.
-It&amp;rsquo;s also tiny and privacy conscious with no external dependencies (unless you opt to include comments). No JavaScript frameworks, icon packs, or Google fonts. No ads or trackers polluting your console window. We kept things simple. A little vanilla JavaScript, a dash of CSS, and the power of Hugo.
-All the static assets for the site (JS files, CSS, and fonts) are located within the theme&amp;rsquo;s /assets/ directory.</description>
+      <description>Blog Welcome to Dice IT LLC, your trusted partner in software consultancy and development! Led by Eduardo Borsa, an experienced software engineer with 8 years of expertise, we are a cutting-edge company specializing in Elixir development.
+Are you passionate about software development and eager to stay ahead of the curve in this ever-evolving field? Look no further! The DICE IT Blog is your go-to resource for cutting-edge insights, expert opinions, and practical tips related to software development, with a particular focus on Elixir.</description>
     </item>
     
   </channel>

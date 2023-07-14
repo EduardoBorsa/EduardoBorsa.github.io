@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>python on DICE IT</title>
+    <link>http://example.org/tags/python/</link>
+    <description>Recent content in python on DICE IT</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 14 Jul 2023 14:54:23 -0300</lastBuildDate><atom:link href="http://example.org/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>First Day Top Interview 150</title>
+      <link>http://example.org/blog/first-day-top-interview-150/</link>
+      <pubDate>Fri, 14 Jul 2023 14:54:23 -0300</pubDate>
+      
+      <guid>http://example.org/blog/first-day-top-interview-150/</guid>
+      <description>Contents Exercise Description Code With Me Exercise Setup Solution 1 Solution 2 Solution 3 Today is the first day of my journey with my friend Dennis Dang on doing the Top 150 Interview Study Plan from Leet Code Exercise Description The first exercise is about Merge Sorted Array . The description is:
+You are given two integer arrays nums1 and nums2, sorted in non-decreasing order, and two integers m and n, representing the number of elements in nums1 and nums2 respectively.</description>
+    </item>
+    
+  </channel>
+</rss>
