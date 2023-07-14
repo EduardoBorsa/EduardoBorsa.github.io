@@ -1,6 +1,6 @@
 baseURL = 'http://example.org/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'DICE IT'
 theme = ["hugo-video", "poison"]
 paginate = 10
 pluralizelisttitles = false   # removes the automatically appended "s" on sidebar entries
@@ -9,9 +9,9 @@ pluralizelisttitles = false   # removes the automatically appended "s" on sideba
 # disqusShortname = "yourDisqusShortname"
 
 [params]
-    brand = "Poison"                      # name of your site - appears in the sidebar
-    # brand_image = "/images/test.jpg"    # path to the image shown in the sidebar
-    description = "Update this description..." # Used as default meta description if not specified in front matter
+    brand = "DICE IT"                      # name of your site - appears in the sidebar
+    brand_image = "/images/logo.png"    # path to the image shown in the sidebar
+    description = "Software Consultancy" # Used as default meta description if not specified in front matter
     dark_mode = true                      # optional - defaults to false
     # favicon = "favicon.png"             # path to favicon (defaults to favicon.png)
 
@@ -27,18 +27,12 @@ pluralizelisttitles = false   # removes the automatically appended "s" on sideba
     ]
 
     # Links to your socials.  Comment or delete any you don't need/use. 
-    github_url = "https://github.com"
-    gitlab_url = "https://gitlab.com"
-    linkedin_url = "https://linkedin.com"
+    github_url = "https://github.com/EduardoBorsa"
+    linkedin_url = "https://www.linkedin.com/in/eduardo-borsa-770799124/"
     twitter_url = "https://twitter.com"
     mastodon_url = "https://mastodon.social"
-    tryhackme_url = "https://tryhackme.com"
     discord_url = "https://discord.com"
     youtube_url = "https://youtube.com"
-    instagram_url = "https://instagram.com"
-    facebook_url = "https://facebook.com"
-    flickr_url = "https://flickr.com"
-    telegram_url = "https://telegram.org"
     email_url = "mailto://user@domain"
 
     # NOTE: If you don't want to use RSS, comment or delete the following lines
