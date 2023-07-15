@@ -39,12 +39,12 @@
   
  
 
-
-  
-  
-  
  
 
+
+  
+  
+  
  
 
 
@@ -58,11 +58,11 @@
 
 
 
-<title itemprop="name">Dice It - About</title>
-<meta property="og:title" content=Dice&#32;It&#32;-&#32;About />
-<meta name="twitter:title" content=Dice&#32;It&#32;-&#32;About />
-<meta itemprop="name" content=Dice&#32;It&#32;-&#32;About />
-<meta name="application-name" content=Dice&#32;It&#32;-&#32;About />
+<title itemprop="name">Dice It - Neovim Format on Save - No Plugin</title>
+<meta property="og:title" content=Dice&#32;It&#32;-&#32;Neovim&#32;Format&#32;on&#32;Save&#32;-&#32;No&#32;Plugin />
+<meta name="twitter:title" content=Dice&#32;It&#32;-&#32;Neovim&#32;Format&#32;on&#32;Save&#32;-&#32;No&#32;Plugin />
+<meta itemprop="name" content=Dice&#32;It&#32;-&#32;Neovim&#32;Format&#32;on&#32;Save&#32;-&#32;No&#32;Plugin />
+<meta name="application-name" content=Dice&#32;It&#32;-&#32;Neovim&#32;Format&#32;on&#32;Save&#32;-&#32;No&#32;Plugin />
 <meta property="og:site_name" content="DICE IT" />
 
 
@@ -72,21 +72,20 @@
 <meta name="twitter:description" content="" />
 
 
-<base href="http://example.org/about/" />
-<link rel="canonical" href="http://example.org/about/" itemprop="url" />
-<meta name="url" content="http://example.org/about/" />
-<meta name="twitter:url" content="http://example.org/about/" />
-<meta property="og:url" content="http://example.org/about/" />
+<base href="http://example.org/blog/neovim-format-on-save-no-plugin/" />
+<link rel="canonical" href="http://example.org/blog/neovim-format-on-save-no-plugin/" itemprop="url" />
+<meta name="url" content="http://example.org/blog/neovim-format-on-save-no-plugin/" />
+<meta name="twitter:url" content="http://example.org/blog/neovim-format-on-save-no-plugin/" />
+<meta property="og:url" content="http://example.org/blog/neovim-format-on-save-no-plugin/" />
 
 
 
 
 
-<meta property="og:updated_time" content=10007-10-05T743:27:23-0300 />
+<meta property="og:updated_time" content=15007-15-01T727:57:23-0300 />
 
 
 <link rel="sitemap" type="application/xml" title="Sitemap" href='http://example.org/sitemap.xml' />
-<link href="http://example.org/about/index.xml" rel="alternate" type="application/rss+xml" title="DICE IT" />
 
 <meta name="robots" content="index,follow" />
 <meta name="googlebot" content="index,follow" />
@@ -113,16 +112,16 @@
     {
         "@context": "http://schema.org",
         "@type": "Article",
-        "headline": "About",
+        "headline": "Neovim Format on Save - No Plugin",
         "author": {
             "@type": "Person",
             "name": ""
         },
-        "datePublished": "2023-07-10",
+        "datePublished": "2023-07-15",
         "description": "",
-        "wordCount":  0 ,
+        "wordCount":  165 ,
         "mainEntityOfPage": "True",
-        "dateModified": "2023-07-10",
+        "dateModified": "2023-07-15",
         "image": {
             "@type": "imageObject",
             "url": ""
@@ -351,20 +350,83 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
 </aside>
 
             <main class="content container">
-                
-<div class="post">
+                <div class="post">
+  <div class="info">
+    <h1 class="post-title">
+        <a href="http://example.org/blog/neovim-format-on-save-no-plugin/">Neovim Format on Save - No Plugin</a>
+    </h1>
     
-        <h1 class="post-title">DICE IT - Software Consultancy</h1>
-        <p><img src="/images/about/eduardo.jpg" alt="targets"></p>
-<p>Welcome to Dice IT LLC, your trusted partner in software consultancy and development! Led by Eduardo Borsa, an experienced software engineer with 8 years of expertise, we are a cutting-edge company specializing in Elixir development.</p>
-<p>Are you passionate about software development and eager to stay ahead of the curve in this ever-evolving field? Look no further! The <a href="http://example.org/blog/" title="Blog">DICE IT Blog</a>
- is your go-to resource for cutting-edge insights, expert opinions, and practical tips related to software development, with a particular focus on Elixir.</p>
-
+        <time datetime="2023-07-15T13:27:57-0300" class="post-date">
+            July 15, 2023
+        </time>
+    
+    
+    
+    
+    
+    
     
 </div>
 
+  <p>Now that null-ls is no longer going to be maintained, I was wondering how to get the
+same behavior, but without null-ls.</p>
+<p>So my end goal is this:</p>
+<pre><code>I want to execute format on a specific file whenever I save that file.
+Specifically I want to run the elixir formatter whenever I save an *.ex
+or *.exs file
+</code></pre>
+<p>And the solution is:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span>vim.api.nvim_create_autocmd(<span style="color:#e6db74">&#34;BufWritePre&#34;</span>, {
+</span></span><span style="display:flex;"><span>  group <span style="color:#f92672">=</span> vim.api.nvim_create_augroup(<span style="color:#e6db74">&#34;FormatBeforeSaveElixirFiles&#34;</span>, {clear <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span>}),
+</span></span><span style="display:flex;"><span>  pattern <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;*.ex&#34;</span>, <span style="color:#e6db74">&#34;*.exs&#34;</span>},
+</span></span><span style="display:flex;"><span>  callback <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>()
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">local</span> file_name <span style="color:#f92672">=</span> vim.api.nvim_buf_get_name(<span style="color:#ae81ff">0</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    vim.fn.jobstart({<span style="color:#e6db74">&#34;mix&#34;</span>, <span style="color:#e6db74">&#34;format&#34;</span>, file_name}, {
+</span></span><span style="display:flex;"><span>      stdout_buffered <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>    })
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    vim.cmd(<span style="color:#e6db74">&#34;:e!&#34;</span>)
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>})
+</span></span></code></pre></div><p>In order to use the snippet of code above you can:</p>
+<h2 id="option-1">Option 1</h2>
+<p>Just create any *.lua file, add the code to it and the run <code>:source %</code>, then on the save
+neovim session open and elixir file and see if the code is executed.</p>
+<h2 id="option-2">Option 2</h2>
+<p>Add the snippet of code inside a lua file inside your neovim config folder and inside the /after/plugin/
+folder. For example: <code>~/.config/nvim/after/plugin/format_elixir_files_before_save.lua</code></p>
+<p>Thank you for reading!</p>
+
+  <hr>
+<div class="footer">
+    
+	    
+            <a class="previous-post" href="http://example.org/blog/first-day-top-interview-150/?ref=footer"><span style="font-weight:bold;">« Previous</span><br>First Day Top Interview 150</a>
+        
+	    
+    
+</div>
+
+  
+</div>
             </main>
             
+  
+    <div class="article-toc ">
+    <div class="toc-wrapper">
+      <h4 id="contents"></h4>
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#option-1">Option 1</a></li>
+    <li><a href="#option-2">Option 2</a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+  
+
         </div>
     </body>
 </html>

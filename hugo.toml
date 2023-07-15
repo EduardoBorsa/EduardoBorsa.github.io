@@ -22,8 +22,8 @@ pluralizelisttitles = false   # removes the automatically appended "s" on sideba
         # HasChildren:  If the directory's files should be listed.  Default is true.
         # Limit:        If the files should be listed, how many should be shown.
     menu = [
-        {Name = "About", URL = "/about", HasChildren = false},
-        {Name = "Blog", URL = "/blog/"},
+        {Name = "About", URL = "/about", HasChildren = false, Pre = "Recent"},
+        {Name = "Blog", URL = "/blog"},
     ]
 
     # Links to your socials.  Comment or delete any you don't need/use. 

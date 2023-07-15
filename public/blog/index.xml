@@ -6,7 +6,19 @@
     <description>Recent content in Blog on DICE IT</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 14 Jul 2023 14:54:23 -0300</lastBuildDate><atom:link href="http://example.org/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 15 Jul 2023 13:27:57 -0300</lastBuildDate><atom:link href="http://example.org/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Neovim Format on Save - No Plugin</title>
+      <link>http://example.org/blog/neovim-format-on-save-no-plugin/</link>
+      <pubDate>Sat, 15 Jul 2023 13:27:57 -0300</pubDate>
+      
+      <guid>http://example.org/blog/neovim-format-on-save-no-plugin/</guid>
+      <description>Now that null-ls is no longer going to be maintained, I was wondering how to get the same behavior, but without null-ls.
+So my end goal is this:
+I want to execute format on a specific file whenever I save that file. Specifically I want to run the elixir formatter whenever I save an *.ex or *.exs file And the solution is:
+vim.api.nvim_create_autocmd(&amp;#34;BufWritePre&amp;#34;, { group = vim.api.nvim_create_augroup(&amp;#34;FormatBeforeSaveElixirFiles&amp;#34;, {clear = true}), pattern = {&amp;#34;*.</description>
+    </item>
+    
     <item>
       <title>First Day Top Interview 150</title>
       <link>http://example.org/blog/first-day-top-interview-150/</link>
