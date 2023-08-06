@@ -1,9 +1,6 @@
 [submodule "themes/hugo-video"]
 	path = themes/hugo-video
 	url = https://github.com/martignoni/hugo-video.git
-[submodule "themes/poison"]
-	path = themes/poison
-	url = https://github.com/lukeorth/poison.git
 [submodule "themes/blist"]
 	path = themes/blist
 	url = https://github.com/apvarun/blist-hugo-theme
