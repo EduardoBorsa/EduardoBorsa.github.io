@@ -270,6 +270,7 @@
       "heading",
       "headings",
       "inline-markdown-within-tables",
+      "life",
       "list-types",
       "mane-refeci-capiebant-unda-mulcebat",
       "nested-list",
@@ -277,10 +278,12 @@
       "other-elements--abbr-sub-sup-kbd-mark",
       "paragraph",
       "tables",
+      "things-i-got-to-learn",
       "twitter-simple-shortcode",
       "unordered-list",
       "vagus-elidunt",
       "vimeo-simple-shortcode",
+      "work-related",
       "youtube-privacy-enhanced-shortcode"
     ]
   }
